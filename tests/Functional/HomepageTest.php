@@ -23,6 +23,7 @@ class HomepageTest extends BaseTestCase
         $response = $this->runApp('GET', '/');
         // $this->assertEquals(200, $response->getStatusCode());
         $this->assertContains('Custom by HungNg', (string) $response->getBody());
+        $this->assertContains('Hierarchical Model View Controller Design Pattern', (string) $response->getBody());
         $this->assertNotContains('Hello', (string) $response->getBody());
     }
 
