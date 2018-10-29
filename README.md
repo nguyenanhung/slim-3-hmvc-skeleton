@@ -1,27 +1,29 @@
-# Slim Framework 3 Skeleton Application
+# Slim Framework 3 Skeleton HMVC Application
 
-Use this skeleton application to quickly setup and start working on a new Slim Framework 3 application. This application uses the latest Slim 3 with the **PHP-View** template renderer, **Slim-PDO** is Database Handle, **symfony/console** is Console Handle. It also uses the **Monolog** logger.
+**Modular Extensions** makes the **Slim 3** micro framework modular. Modules are groups of independent components, typically model, controller and view, arranged in an application modules sub-directory that can be dropped into other **Slim 3** applications.
 
-This skeleton application was built for Composer. This makes setting up a new Slim Framework application quick and easy.
+**HMVC** stands for **Hierarchical Model View Controller**.
+
+Module Controllers can be used as normal Controllers or HMVC Controllers and they can be used as widgets to help you build view partials.
 
 ## Install the Application
 
 Run this command from the directory in which you want to install your new Slim Framework application.
 
 ```shell
-composer create-project nguyenanhung/slim-3-skeleton [my-app-name]
+composer create-project nguyenanhung/slim-3-hmvc-skeleton [my-app-name]
 ```
 
 or
 
 ```shell
-php composer.phar create-project nguyenanhung/slim-3-skeleton [my-app-name]
+php composer.phar create-project nguyenanhung/slim-3-hmvc-skeleton [my-app-name]
 ```
 
 Replace `[my-app-name]` with the desired directory name for your new application. You'll want to:
 
 * Point your virtual host document root to your new application's `public/` directory.
-* Ensure `logs/` is web writeable.
+* Ensure `storage/` is web writeable.
 
 To run the application in development, you can run these commands
 
@@ -66,79 +68,7 @@ php cli.php  app:test-command
 
 ## Structure Project
 
-Now, Project structure project is follow structure below
-
-```reStructuredText
-[my-app-name]
-├── CONTRIBUTING.md
-├── README.md
-├── cli.php
-├── composer.json
-├── composer.lock
-├── docker-compose.yml
-├── phpunit.xml
-├── public
-│   └── index.php
-├── src
-│   ├── App
-│   │   └── AppController.php
-│   ├── Commands
-│   │   └── TestCommand.php
-│   ├── Helper
-│   ├── Library
-│   │   ├── BaseModel.php
-│   │   ├── BaseModelInterface.php
-│   │   ├── Config.php
-│   │   └── Db.php
-│   ├── bootstrap.php
-│   ├── classmap.php
-│   ├── constants.php
-│   ├── dependencies.php
-│   ├── helpers.php
-│   ├── middleware.php
-│   ├── routes.php
-│   └── settings.php
-├── storage
-│   ├── cache
-│   │   └── README.md
-│   ├── database
-│   │   ├── README.md
-│   └── logs
-│       └── README.md
-├── structure.md
-├── templates
-│   └── index.phtml
-├── tests
-│   └── Functional
-│       ├── AppTest.php
-│       ├── BaseTestCase.php
-│       └── HomepageTest.php
-└── vendor
-    ├── autoload.php
-    ├── bin
-    │   └── phpunit -> ../phpunit/phpunit/phpunit
-    ├── composer
-    ├── container-interop
-    ├── doctrine
-    ├── kint-php
-    ├── monolog
-    ├── myclabs
-    ├── nikic
-    ├── paragonie
-    ├── phpdocumentor
-    ├── phpspec
-    ├── phpunit
-    ├── pimple
-    ├── psr
-    ├── sebastian
-    ├── slim
-    ├── symfony
-    └── webmozart
-
-425 directories, 2226 files
-```
-
-
+See full Structure: https://github.com/nguyenanhung/slim-3-hmvc-skeleton/blob/master/TREE.md
 
 ## Contact
 
