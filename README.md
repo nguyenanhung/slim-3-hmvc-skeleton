@@ -6,6 +6,18 @@
 
 Module Controllers can be used as normal Controllers or HMVC Controllers and they can be used as widgets to help you build view partials.
 
+### What HMVC ?
+
+**Hierarchical model–view–controller** (**HMVC**) is a software architectural pattern, a variation of **model–view–controller** (**MVC**) similar to **presentation–abstraction–control** (**PAC**), that was published in 2000 in an article in JavaWorld Magazine, the authors apparently unaware of PAC, which was published 13 years earlier.
+
+The controller has some oversight in that it selects first the model and then the view, realizing an approval mechanism by the controller. The model prevents the view from accessing the data source directly.
+
+![](https://upload.wikimedia.org/wikipedia/commons/4/4a/Pac-schema.png)
+
+
+
+See: [Hierarchical Model View Controller from Wikipedia](https://en.wikipedia.org/wiki/Hierarchical_model%E2%80%93view%E2%80%93controller)
+
 ## Install the Application
 
 Run this command from the directory in which you want to install your new Slim Framework application.
@@ -48,7 +60,7 @@ That's it! Now go build something cool.
 
 ## Running via CLI / Command Line Interface
 
-Project **slim-3-skeleton** use **symfony/console** is handle Console request
+Project **slim-3-hmvc-skeleton** use **symfony/console** is handle Console request
 
 Example
 
