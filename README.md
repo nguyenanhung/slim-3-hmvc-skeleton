@@ -12,9 +12,15 @@ Module Controllers can be used as normal Controllers or HMVC Controllers and the
 
 The controller has some oversight in that it selects first the model and then the view, realizing an approval mechanism by the controller. The model prevents the view from accessing the data source directly.
 
+**PAC**
+
 ![](https://upload.wikimedia.org/wikipedia/commons/4/4a/Pac-schema.png)
 
 
+
+and **HMVC**
+
+![](https://res.cloudinary.com/inviqa-uk/image/upload/v1470135273/gazouillement.png)
 
 See: [Hierarchical Model View Controller from Wikipedia](https://en.wikipedia.org/wiki/Hierarchical_model%E2%80%93view%E2%80%93controller)
 
