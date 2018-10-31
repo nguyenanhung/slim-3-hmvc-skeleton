@@ -16,6 +16,7 @@
         "modular",
         "Hierarchical Model View Controller"
     ],
+    "type": "project",
     "homepage": "http://github.com/nguyenanhung/slim-3-hmvc-skeleton",
     "license": "MIT",
     "authors": [
